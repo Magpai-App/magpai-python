@@ -2,8 +2,8 @@ import setuptools
 from magpai.version import Version
 
 
-setuptools.setup(name='Magpai',
-                 version=Version('1.0.0').number,
+setuptools.setup(name='magpai',
+                 version=Version('1.0.1').number,
                  description='Magpai python bindings',
                  long_description=open('README.md').read().strip(),
                  author='Package Author',
