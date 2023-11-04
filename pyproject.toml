@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "magpai"
 authors = [
-    {name = "Ben Skinner", email = "ben@magpai.app"},
+    {name = "Ben", email = "accounts@magpai.app"},
 ]
 description = "Magpai python bindings"
 readme = "README.md"
@@ -20,9 +20,6 @@ dependencies = [
     'importlib-metadata; python_version<"3.8"',
 ]
 dynamic = ["version"]
-
-[project.scripts]
-my-script = "my_package.module:function"
 
 [project.urls]
 "Homepage" = "https://magpai.app"

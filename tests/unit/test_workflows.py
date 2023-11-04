@@ -1,4 +1,4 @@
-from magpai.workflows import RunWorkflow
+from magpai import *
 from tests import *
 from tests.helpers import *
 import os
@@ -6,7 +6,7 @@ import os
 class TestVersion(unittest.TestCase):
 
     def test_workflow_run(self):
-        job = RunWorkflow(os.environ["MAGPAI_API"], "yJXfa30diyekbQZdvmRQ", {"Name": "Elmo"})
+        job = Magpai(os.environ["MAGPAI_API"]).run("yJXfa30diyekbQZdvmRQ", {"Name": "Elmo"})
         print(job)
         for output in job['outputs']:
             if output['name'] == 'out_1':
